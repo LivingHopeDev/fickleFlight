@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background: #ffffff;
+  color: #303030;
+
+}
+
+header {
+  background-image: url("./assets/images/HeroBackground.svg"),
+    url("./assets/images/HeroGradient.svg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 100vh;
+}
+
+.hero-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  padding: 1rem;
+}
+
+nav div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.hero-text {
+  font-family: "Baloo Bhaijaan";
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.flight-form {
+  color: #303030;
+  background-color: white;
+  padding: 1rem;
+  width: 80%;
+  height: auto;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.flight-input {
+  margin-top: 1.5rem;
+}
+
+label {
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 1rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #a09f9f;
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: #f99a0e;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #c47705;
+}
+
+/* RECENT SEARCHES */
+.activity-container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.flight-departure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.departure {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #a09f9f;
+  width: 100%;
+}
+
+.departure img {
+  margin-bottom: 1rem;
+}
+
+.departure p {
+  color: #216cb3;
+  font-weight: 700;
+}
+
+.prepare {
+  margin-top: 2rem;
+}
+
+.trip-activity {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trip-activity h5 {
+  text-align: center;
+  color: #dbdada;
+}
+
+.trip-activity img {
+  width: 3rem;
+}
+
+/* PLAN TRIPS */
+.plan-trip {
+  margin-top: 2rem;
+}
+
+.destination-container,
+.holiday-container,
+.stays-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+/* POPULAR DESTINATION */
+.card-container,
+.holiday-card-container,
+.stays-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-container img {
+  border-radius: 0.5rem;
+}
+
+.destination-card {
+  position: relative;
+}
+
+.city,
+.price {
+  position: absolute;
+  color: white;
+  text-align: end;
+}
+
+.city {
+  top: 1rem;
+  left: 0.5rem;
+}
+
+.price {
+  top: 1rem;
+  right: 0.5rem;
+}
+
+/* RECOMMENDED HOLIDAYS */
+.holiday-card-container img {
+  border-top: 0.5rem;
+}
+
+.holiday-city-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #dbdada;
+  margin-top: -0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.holiday-city-price p {
+  color: #a09f9f;
+  font-size: 0.8rem;
+}
+
+/* POPULAR STAYS */
+
+.stays-card {
+  border: 1px solid #dbdada;
+  padding: 0.8rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.stays-details {
+  margin-top: 1rem;
+}
+
+.stays-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stays-description img {
+  cursor: pointer;
+}
+
+.stays-rating {
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.stays-details h3 {
+  margin-bottom: 0.5rem;
+}
+
+.stays-details button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #c8dff5;
+  color: #216cb3;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.stays-details button:hover {
+  background-color: #216cb3;
+  color: white;
+}
+
+.stays-rating span {
+  color: #216cb3;
+  cursor: pointer;
+}
+
+.stays-rating a {
+  text-decoration: none;
+}
+
+/* SUBCRIBE TO NEWSLETTER */
+.newsletter-container {
+  background-image: url("./assets/images/SubscribeSectionBackground.svg");
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.newsletter-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(30%);
+}
+
+.newsletter-details h3 {
+  text-transform: uppercase;
+  color: #216cb3;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.newsletter-form button {
+  background-color: #f99a0e;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  padding: 1rem;
+  width: 30%;
+}
+
+.newsletter-form button:hover {
+  background-color: #c47705;
+  cursor: pointer;
+}
+
+footer {
+  background-image: url("./assets/images/ResultGradient.svg");
+  background-repeat: no-repeat;
+  height: auto;
+  margin-top: -5.5rem;
+  padding: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  margin-top: 1rem;
+}
+
+.social-link img {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.left-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.left-details .logo {
+  width: 10rem;
+}
+
+.right-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company,
+.support,
+.more {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 580px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+
+  .hero-content {
+    margin-top: 8rem;
+  }
+
+  .flight-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .flight-header {
+    font-size: 1rem;
+  }
+
+  .flight-departure,
+  .card-container,
+  .holiday-card-container,
+  .stays-card-container,
+  .details {
+    flex-direction: row;
+  }
+
+  .details {
+    gap: 5rem;
+  }
+
+  .right-details,
+  .left-details {
+
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-text {
+    font-size: 1.6rem;
+  }
+}
